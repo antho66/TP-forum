@@ -9,11 +9,26 @@
     </head>
     <body>
         This is the login page<br>
+        <?php
+            if(isset($username)){
+                echo $username;
+            }
+        ?>
+        <form action="services/connexionForm.php" method="post">
+                <input type="text" name="username">
+                <input type="text" name="mdp">
 
-<form action="">
-        <input type="text" name="username">
-         <input type="text" name="mdp">
-</form>
+                <input type="submit" value="send">
+        </form>
+
+        <form action="services/inscriptionForm.php" method="post">
+                <input type="text" name="username">
+                <input type="text" name="mdp">
+
+                <input type="submit" value="send">
+        </form>
+
+
         Go to the <a href="index.php?page=wall">Wall</a>
     </body>
 </html>

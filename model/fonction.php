@@ -21,15 +21,16 @@ function getdescription(){
  return "Bienvenue Anthony";
 }
 
-
 function getFeeback(){
-$control = false;
-if(isset($_GET['controle'])){
-    $control =$GET['controle'];
-}
+    $control = false;
+    if(isset($_GET['controle'])){
+        $control =$GET['controle'];
+    }
 
 }
 
-
-
+function getUserForm($username, $password) {
+    return 'ndc: '.$username.' || mdp: '.$password;
+}
+echo 'ok';
  ?>
