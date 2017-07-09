@@ -24,7 +24,7 @@ function getdescription(){
 function getFeeback(){
     $control = false;
     if(isset($_GET['controle'])){
-        $control =$GET['controle'];
+        $control =$_GET['controle'];
     }
 
 }
@@ -32,5 +32,4 @@ function getFeeback(){
 function getUserForm($username, $password) {
     return 'ndc: '.$username.' || mdp: '.$password;
 }
-echo 'ok';
- ?>
+
