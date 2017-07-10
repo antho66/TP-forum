@@ -1,17 +1,37 @@
-.center{
-display: flex;
+
+html{height: 100%;
+width: 100%;}
+body{
 text-align: center;
-border:  10px;
+margin: 0px;
+ margin: 0px;
+  padding: 0px;
+    height: 100%;
+    width:100%;
+}
+
+
+.center{
+text-align: center;
+border: 10px solid black;
 }
 
 .inscription{
-display: flex;
-flex-direction:column; 
 background-color: blue;
+height: 357px;
+width: 200px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50em;
 }
 
-.connection{
-display: flex;
-flex-direction:column; 
-background-color: blueviolet;
+.connexion{
+background-color: gold;
+height: 221px;
+width: 290px;
+border: 10px solid black;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50em;
 }
+

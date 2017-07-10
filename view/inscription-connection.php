@@ -12,60 +12,96 @@
       
       <div class="center">
 
-<div class="inscription">
+            <div class="inscription">
 
-<h1>Inscription</h1>
 
-<form action="formvalid.php" metho="post" >
 
-     <label>Prénom</label>
-        <input type="text" name="prenon">
-         <br />
+            <form action="services/inscriptionService.php" method="post" >
+            <h1>Inscription</h1>
+                <label>Prénom</label>
+                    <input type="text" name="prenom">
+                    <br />
+                    <br />
+                    <label>Nom</label>
+                    <input type="text" name="nom">
+                    <br />
+                    <br />
+                    <label>Username</label>
+                    <input type="text" name="username">
+                    <br />
+                    <br />
 
-        <label>Nom</label>
-        <input type="text" name="nom">
-        <br />
+                    <label>password</label>
+                    <input type="password" name="mdp">
+                    <br />
+                    <br />
 
-        <label>Username</label>
-        <input type="text" name="username">
-           <br />
+                    <label>Password Confirmation</label>
+                    <input type="password" name="confirmemdp">
+                    <br />
+                    <br />
 
-        <label>password</label>
-         <input type="text" name="mdp">
-          <br />
+                    <label>E-mail</label>
+                    <input type="text" name="mail">
+                    <br />
+                    <br />
 
-         <label>Password Confirmation</label>
-         <input type="text" name="confirmemdp">
-          <br />
+                    <input type="submit" value="envoyer">
+                    <input type="reset" value="effacer">
+                    <br>
+                    <br />
+                    <?php
+                        
+                    if(empty($_SESSION["erreur"]) == false) {
+                        $er = $_SESSION["erreur"];
+                        foreach($er as $key => $typerreur){
+                            // echo "$key => $typerreur <br />";
 
-         <label>E-mail</label>
-         <input type="text" name="mail">
-           <br />
+                            if($typerreur == 'mdp8caractere'){
+                            echo "mot de passe a  8 caractere <br /> ";
+                            }
+                            if($typerreur == 'mdpnonsimilaire'){
+                            echo "ce mot de passe ne similaire au precedent <br /> ";
+                            }
 
-         <input type="submit" value="envoyer">
-         <input type="reset" value="effacer">
-         
-</form>
-<?php if(!empty($error)) {echo '<span style="color:red>"'.$error.'<span>';} else {echo "<br />";} ?>
-       </div>
+                            if($typerreur == 'username4caractere'){
+                            echo "username doit avoir au moin  4 caractére <br /> ";
+                            }
 
-       <div class="connexion">
+                            if($typerreur == 'emailincorrect'){
+                            echo "ce mot de passe ne pas répetorier <br /> ";
+                            }
 
-<form action="connection.php" metho="post" >
-        <h1>Connection</h1>
+                            if($typerreur == 'champvide'){
+                            echo "tout les champ sont vide  <br /> ";
+                            }
 
-          <label>username</label>
-        <input type="text" name="username">
-         <br />
 
-        <label>password</label>
-         <input type="text" name="mdp">
-         <br />
-         
-         <input type="submit" value="connection">
-         <input type="reset" value="effacer">
-</form>
-       </div>
+                        }
+                        //  var_dump($_SESSION["erreur"]);
+                        //  die();
+                    }
+                    ?>
+            </form>
+            </div>
+
+            <div class="connexion">
+
+                    <form action="connexion.php" method="post" >
+                            <h1>Connexion</h1>
+
+                            <label>username</label>
+                            <input type="text" name="username">
+                            <br />
+
+                            <label>password</label>
+                            <input type="password" name="mdp">
+                            <br />
+                            
+                            <input type="submit" value="connection">
+                            <input type="reset" value="effacer">
+                    </form>
+            </div>
        
        </div>
     </body>

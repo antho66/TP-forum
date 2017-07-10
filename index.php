@@ -1,5 +1,6 @@
 <?php
-      include_once("model/fonction.php");
+		session_start();
+      	include_once("model/fonction.php");
         $page = getPage(); 
 //    var_dump($page);
 //    die();
@@ -19,7 +20,7 @@
             break;
 
 			case 'formulaire-valider':
-			include_once('view/formvalid.php');
+			include_once('service/formvalid.php');
             break;
 
 		case 'wall':
