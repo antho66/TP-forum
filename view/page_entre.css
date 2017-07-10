@@ -1,0 +1,17 @@
+.center{
+display: flex;
+text-align: center;
+border:  10px;
+}
+
+.inscription{
+display: flex;
+flex-direction:column; 
+background-color: blue;
+}
+
+.connection{
+display: flex;
+flex-direction:column; 
+background-color: blueviolet;
+}

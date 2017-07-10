@@ -4,7 +4,7 @@ function getPage(){
   if(isset($_GET['page'])){
     $page = $_GET['page'];
   }else{
-    $page = "login";
+    $page = "inscription-connection";
   }
   return $page;
 }
@@ -18,7 +18,7 @@ function getUser(){
 
 function getdescription(){
     // des appel de base de donees
- return "Bienvenue Anthony";
+ return "Bienvenue sur ton profil Anthony";
 }
 
 function getFeeback(){
