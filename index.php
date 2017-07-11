@@ -16,12 +16,16 @@
 			break;   
 
 			case 'connexion':
-			include_once('view/connexion.php');
+			include_once('services/connexionservice.php');
             break;
 
 			case 'formulaire-valider':
 			include_once('service/formvalid.php');
             break;
+
+			case 'validation-inscription':
+			include_once('view/valid-inscri.php');
+			break;
 
 		case 'wall':
 			$user = getUser();

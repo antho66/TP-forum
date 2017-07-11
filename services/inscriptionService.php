@@ -1,8 +1,7 @@
 <?php
-
 session_start();
 
-
+include_once("../model/fonction.php");
 
 $nom = $_POST['nom'];
 $prenom =$_POST['prenom'];
@@ -32,16 +31,16 @@ if(!empty($prenom) && !empty($nom) && !empty($username) &&
     }
 
 
-    if (strlen ( $username ) >= 4){
+    if (strlen ( $username ) < 4){
      $erreur[]="username4caractere";
    
     }
 
    
 
+    
 
-
-    if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+    if (filter_var($mail, FILTER_VALIDATE_EMAIL) == false) {
      
         $erreur[]="emailincorrect";
     } 
@@ -52,11 +51,19 @@ else{
     $erreur[]="champvide";
 }
 
+
+
 $_SESSION['erreur']=$erreur;
+
+
+if(empty($erreur)){
+    inscription($username,$mail,$mdp,$prenom,$nom);
+}
+
 // var_dump($erreur);
 // die();
 
-header("location:../index.php?page=inscription-connection");
+header("location:../index.php?page=validation-inscription");
 
 
     

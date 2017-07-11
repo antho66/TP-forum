@@ -33,3 +33,44 @@ function getUserForm($username, $password) {
     return 'ndc: '.$username.' || mdp: '.$password;
 }
 
+
+function inscription($username,$email,$mdp,$prenom,$nom){
+    $connexion = new PDO ('mysql:host=localhost;dbname=tp-forum;charset=UTF8','root','root');
+
+    $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    $connexion->setAttribute(PDO::ATTR_EMULATE_PREPARES,false);
+
+
+
+    $pdo = $connexion->prepare('INSERT INTO user SET username=:username, email=:email,
+     mdp=:motdepasse,nom=:nom,prenom=:prenom,datecreate=NOW()');
+
+    $pdo->execute(array(
+    'username'=> $username,
+    'email'=>$email,
+    'motdepasse'=> $mdp,
+    'prenom'=> $prenom,
+    'nom'=> $nom,
+    ));
+    $result = $pdo->rowcount();
+
+}   
+
+
+    function connexion($username,$mdp){
+     $connexion = new PDO ('mysql:host=localhost;dbname=tp-forum;charset=UTF8','root','root');
+
+    $connexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    $connexion->setAttribute(PDO::ATTR_EMULATE_PREPARES,false);
+
+
+    $pdo = $connexion->prepare ('SELECT * FROM user WHERE  username=:username AND mdp=:motdepasse ');
+            $pdo -> execute(array(
+        'motdepasse' => $mdp,
+        'username' => $username,
+            ));
+
+    $user = $pdo -> fetchAll(PDO::FETCH_ASSOC);
+    return $user;
+
+    }

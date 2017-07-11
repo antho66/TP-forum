@@ -1,4 +1,7 @@
 <?php 
+session_start();
+
+include_once("../model/fonction.php");
 
 $variable = $_POST;
 
@@ -20,21 +23,35 @@ $variable = $_POST;
  * */
 
 
-header("location: ../index.php?page=listesujets&controle=success");
-die("here");
-
-    include '../services/connexion.php';
-
     //Alfonso: je pense qu'ici ce n'est pas la peine de transformer en html entities
     // plutot tu devrais faire des vérification pour voir si ce username
     // existe avec le bon mot de passe... et ensuite tu lui crée une session
 
-    $username = htmlentities($_POST['username']);
-    $password = htmlentities($_POST['mdp']);
-    echo 'ndc: '.$username.' || mdp: '.$password;
+    $username = ($_POST['username']);
+    $mdp = ($_POST['mdp']);
+     
+     if(empty($username)==false AND empty($mdp)==false){
+        
+        $user = connexion($username,$mdp);
+        if(empty($user) == false){
+            $_SESSION["user"] = $user;
+            header("location: ../index.php?page=listesujets&controle=success");
+            
+
+        }
+        else{
+            header("location:../index.php?page=inscription-connection.php");
+        }
+
+     }
+
+
+
+    echo 'ndc: '.$username.' || mdp: '.$mdp;
     //echo getUserForm($username, $password);
+die("here");
 
 
-    //Alfonso: j'imagine que tu étais en train de vérifier ce que faisait la fonction html entities
-    // bon continue le travail dans ce fichier. Bon courage
+
+   
 ?>

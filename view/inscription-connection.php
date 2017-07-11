@@ -69,11 +69,11 @@
                             }
 
                             if($typerreur == 'emailincorrect'){
-                            echo "ce mot de passe ne pas répetorier <br /> ";
+                            echo "email imcomplet <br /> ";
                             }
 
                             if($typerreur == 'champvide'){
-                            echo "tout les champ sont vide  <br /> ";
+                            echo "tout les champ ne sont pas remplie <br /> ";
                             }
 
 
@@ -87,17 +87,17 @@
 
             <div class="connexion">
 
-                    <form action="connexion.php" method="post" >
+                    <form action="services/connexionservice.php" method="post" >
                             <h1>Connexion</h1>
 
                             <label>username</label>
                             <input type="text" name="username">
                             <br />
-
+                             <br />
                             <label>password</label>
                             <input type="password" name="mdp">
                             <br />
-                            
+                            <br />
                             <input type="submit" value="connection">
                             <input type="reset" value="effacer">
                     </form>

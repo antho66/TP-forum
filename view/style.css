@@ -1,6 +1,22 @@
+
+html{
+    background-image: url("../bitcarte.jpg");
+     margin-left: auto;
+    margin-right: auto;
+    
+    overflow: scroll;
+    background-attachment: fixed;
+    background-repeat: repeat-x ;
+}
 .header{
-     height: 173px;
-    background-color:red;
+     height: 96px;
+    background-color:white;
+}
+.logbit{
+    display: flex;
+    flex-direction: row;
+
+    
 }
 nav{width: 100%;
     height: 46px;
@@ -9,14 +25,13 @@ nav{width: 100%;
     }
 
 .main{
-
-    
+    height: 400px;
+    width:  300px;
 }
 
-.information{
-        font-size:12px;
-        font-family: arial;
-            text-align: left;
+.catégorie{
+
+
 }
 .footer{
 
