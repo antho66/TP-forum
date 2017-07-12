@@ -13,17 +13,55 @@
 </head>
 <body>
     <div class="header">
+      <div classe"debut">
         <img src ="cryptomd.png" class="logbit">
-  
+ 
+  <div>
 </div>
-<nav> </nav>
+<nav> <buttom class"deconecte">se deconnecter</buttom> </nav>
+
+
+
 <div class="main">
 
 
-<div classe"catégorie"> 
-  
-  
-  
+<table class="forum">
+   <tr class="premier">
+     <th class"main">Catégorie<th>
+       <th class"info">topics<th>
+       <th class"info">Message<th>
+         <th class"message">Dernier message<th>
+    </tr>
+
+       <tr>
+     <td class"main">
+       <h4>crypto monnaie<h4>
+       <th class"info">51112<th>
+         <th class"info">12/07/2017<th>
+    </tr>
+
+    <tr>
+     <td class"main">
+       <h4>Catégorie<h4>
+       <th class"info">51112<th>
+         <th class"info">12/07/2017<th>
+    </tr>
+
+    <tr>
+     <td class"main">
+       <h4>Catégorie<h4>
+       <th class"info">51112<th>
+         <th class"info">12/07/2017<th>
+    </tr>
+
+    <tr>
+     <td class"main">
+       <h4>Catégorie<h4>
+       <th class"info">51112<th>
+         <th class"info">12/07/2017<th>
+    </tr>
+  </table> 
+
   </div> 
 
 </div><!--fin de la main-->

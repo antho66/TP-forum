@@ -10,7 +10,22 @@ html{
 }
 .header{
      height: 96px;
-    background-color:white;
+    background-color:black;
+    
+}
+
+.debut{
+
+
+}
+.deconecte{
+    color:black;
+    display: flex;
+    flex-direction: row;
+    border: 12px  solid black;
+    background-color: white;
+    font-size: 20px;
+
 }
 .logbit{
     display: flex;
@@ -21,10 +36,11 @@ html{
 nav{width: 100%;
     height: 46px;
     position:relativ;
-    background-color:black;
+    background-color:#a00000;
     }
 
 .main{
+
     height: 400px;
     width:  300px;
 }
@@ -38,4 +54,46 @@ nav{width: 100%;
     
 }
 
+p{
+    text-align: right;
+}
 
+table.forum tr th.main {
+    width: 65%;
+    text-align: center;
+}
+
+table.forum tr th {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+table.forum tr th {
+    padding: 7px 15px;
+        position: relative;
+    border: 1px solid #EDEDED;
+    vertical-align: middle;
+}
+
+table.forum tr.premier {
+    color: #fff;
+    background-color: #baba69;
+    border-bottom: 1px solid transparent;
+    line-height: 14px;
+    width: 100%;
+}
+
+tr {
+    border: 30px;
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+table .forum{
+    margin-bottom: 10px;
+    background: #fff;
+    width: 100%;
+    font-size: 14px;
+    table-layout: fixed;}
