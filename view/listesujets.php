@@ -18,7 +18,13 @@
  
   <div>
 </div>
-<nav> <buttom class"deconecte">se deconnecter</buttom> </nav>
+<nav> 
+  <a href="services/deconnexionservice.php">
+  <buttom class"deconnection">se deconnecter</buttom> 
+  </a>
+  <br />
+  <a href="index.php?page=nouveauposte">Nouveau poste</a>
+</nav>
 
 
 
@@ -27,38 +33,43 @@
 
 <table class="forum">
    <tr class="premier">
-     <th class"main">Catégorie<th>
-       <th class"info">topics<th>
-       <th class"info">Message<th>
-         <th class"message">Dernier message<th>
+     <th class"main">Catégorie</th>
+       <th class"info">topics</th>
+       <th class"info">Message</th>
+         <th class"message">Dernier message</th>
     </tr>
 
        <tr>
      <td class"main">
        <h4>crypto monnaie<h4>
-       <th class"info">51112<th>
-         <th class"info">12/07/2017<th>
+       <th class"info">51112</th>
+         <th class"info">12/07/2017</th>
+         <th class"info">13/07/2017</th>
+    </tr>
+
+    <tr>
+     <td class"main">
+       <h4><h4>
+       <th class"info">51112</th>
+         <th class"info">12/07/2017</th>
+         <th class"info">13/07/2017</th>
+    </tr>
+
+    <tr>
+     <td class"main">
+       <h4>site de tranning<h4>
+       <th class"info">51112/</th>
+         <th class"info">12/07/2017</th>
+         <th class"info">13/07/2017</th>
+
     </tr>
 
     <tr>
      <td class"main">
        <h4>Catégorie<h4>
-       <th class"info">51112<th>
-         <th class"info">12/07/2017<th>
-    </tr>
-
-    <tr>
-     <td class"main">
-       <h4>Catégorie<h4>
-       <th class"info">51112<th>
-         <th class"info">12/07/2017<th>
-    </tr>
-
-    <tr>
-     <td class"main">
-       <h4>Catégorie<h4>
-       <th class"info">51112<th>
-         <th class"info">12/07/2017<th>
+       <th class"info">51112</th>
+         <th class"info">12/07/2017</th>
+         <th class"info">13/07/2017</th>
     </tr>
   </table> 
 

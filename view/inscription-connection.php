@@ -84,7 +84,6 @@
                     ?>
             </form>
             </div>
-    <h1> Deviens un vrait mineur en elaborant des strategie ou en te developent dans le minage </h1>
             <div class="connexion">
 
                     <form action="services/connexionservice.php" method="post" >

@@ -55,13 +55,9 @@ else{
 
 $_SESSION['erreur']=$erreur;
 
-
 if(empty($erreur)){
     inscription($username,$mail,$mdp,$prenom,$nom);
 }
-
-// var_dump($erreur);
-// die();
 
 header("location:../index.php?page=validation-inscription");
 

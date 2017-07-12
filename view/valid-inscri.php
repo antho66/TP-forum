@@ -10,7 +10,7 @@
     <p>Felicitation vous etez bien enregistre dans la basse de donnée.
         Pour vous connecter veuillez cliquez sur ce bouton. 
 
-        <a href="inscription-connection.php"> <buttom>Se connecter</buttom></a>
+        <a href="index.php?page=inscription-connection"> <buttom>Se connecter</buttom></a>
 
          </p>
 </body>

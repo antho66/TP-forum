@@ -1,10 +1,14 @@
 
 html{height: 100%;
-width: 100%;}
+width: 100%;
+}
+
 body{
 text-align: center;
     height: 100%;
     width:100%;
+    background-image: url("../cryptocurrency.jpg");
+    background-size: cover;
 }
 
 
@@ -12,24 +16,25 @@ text-align: center;
 text-align: center;
     height: 100%;
     width:100%;
-border: 10px solid black;
 }
 
 .inscription{
-background-color: blue;
+background-color: white;
+opacity: .8;
 height: 357px;
 width: 200px;
-   margin-left: auto;
-   margin-right: auto;
-   width: 50em;
+margin-left: auto;
+margin-right: auto;
+width: 50em;
 }
 
 .connexion{
-background-color: gold;
+background-color: white;
+opacity: .8;
 height: 221px;
 width: 290px;
-   margin-left: auto;
-   margin-right: auto;
-   width: 50em;
+margin-left: auto;
+margin-right: auto;
+width: 50em;
 }
 

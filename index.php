@@ -7,6 +7,10 @@
 
 	switch( $page ) {
 
+		case "nouveauposte":
+		include('view/nouveauposte.php');
+		break;
+
         case 'inscription-connection':
 			include_once('view/inscription-connection.php');
 			break;
