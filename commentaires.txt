@@ -1,0 +1,19 @@
+Alfonso: Tu as bataillé avec le code et bravo pour ça
+
+    Je t'ai beaucoup suivi et j'ai vu que tu as compris des choses.
+    Tu devrais bosser dur encore ce forum pour si tu peux pour voir
+    encore le fonctionnement du 1) MVC 2)les appels en base de données et 3)les fonctions. qui était l'objetif
+    de ce TP bien que je l'ai mixé avec du CSS et javacript pour ceux qui voulaient
+
+    Aussi créé les tables pour les sujets et les réponses. ou (posts/sujets) et commentaires (organise le comme tu veux
+    beaucoup on employé des terminologie différentes)
+
+    Regarde bien l'exemple que je vais donner et essaie de reprendre ton forum et de continuer.
+
+    Être un programmeur requière beaucoup de transpiration comme tu as pu te rendre compte.
+    Ce n'est pas juste comprendre c'est aussi pratiquer pour pouvoir executer.
+
+    Accroche toi et continue.
+
+    Merci pour tes efforts. Surtout le dernier effort CSS. Si tu publies ton forum sur les crypto currency je souscrit.
+    t'auras eu la meilleure idée de forum.
